@@ -7,7 +7,7 @@ config.default_prog = { "powershell" }
 
 -- Font
 config.font = wezterm.font("JetBrainsMono NFM")
-config.font_size = 14
+config.font_size = 13
 
 -- Theme
 config.color_scheme = "Catppuccin Mocha"
@@ -27,22 +27,22 @@ config.window_padding = {
 config.keys = {
   -- Splits
   {
-    key = 'v',
+    key = 'h',
     mods = 'CTRL|SHIFT|ALT',
     action = action.SplitVertical { domain = 'CurrentPaneDomain' },
   },
   {
-    key = 'h',
+    key = 's',
     mods = 'CTRL|SHIFT|ALT',
     action = action.SplitHorizontal { domain = 'CurrentPaneDomain' },
   },
   {
     key = 'w',
-    mods = 'CTRL',
+    mods = 'CTRL|SHIFT|ALT',
     action = action.CloseCurrentPane { confirm = true },
   },
   {
-    key = '$',
+    key = ']',
     mods = 'CTRL',
     action = action.Hide,
   },
