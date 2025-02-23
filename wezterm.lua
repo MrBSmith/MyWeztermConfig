@@ -25,7 +25,6 @@ config.window_padding = {
 
 -- Keys
 config.keys = {
-  -- Splits
   {
     key = 'h',
     mods = 'CTRL|SHIFT|ALT',
@@ -37,14 +36,17 @@ config.keys = {
     action = action.SplitHorizontal { domain = 'CurrentPaneDomain' },
   },
   {
-    key = 'w',
+    key = 'q',
     mods = 'CTRL|SHIFT|ALT',
     action = action.CloseCurrentPane { confirm = true },
   },
   {
-    key = ']',
-    mods = 'CTRL',
+    key = 'F12',
     action = action.Hide,
+  },
+  {
+    key = 'F5',
+    action = wezterm.action.TogglePaneZoomState,
   },
 }
 
